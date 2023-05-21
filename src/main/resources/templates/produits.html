@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Title</title>
+    <!-- this is where we refer the css file from src/main/resources/static/main.css -->
+    <link th:href="@{/main.css}" rel="stylesheet" />
 </head>
 <body>
     <h1>Hello world</h1>
+    <h1 class="mt-2 text-xl" th:text="'Hello!'" />
     <table border="1">
         <thead>
             <tr>
